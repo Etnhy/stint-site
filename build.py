@@ -2,19 +2,32 @@ import html
 import os
 
 CONTACT = "appdev8661@gmail.com"
-UPDATED = {"en": "October 5, 2026", "ru": "5 октября 2026", "uk": "5 жовтня 2026"}
+UPDATED = {"en": "October 5, 2026", "ru": "5 октября 2026", "uk": "5 жовтня 2026", "de": "5. Oktober 2026"}
 EULA = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
 ROOT = os.path.dirname(os.path.abspath(__file__))
-LANGS = ["en", "ru", "uk"]
-LANG_NAMES = {"en": "EN", "ru": "RU", "uk": "UA"}
+LANGS = ["en", "de", "uk", "ru"]
+LANG_NAMES = {"en": "EN", "de": "DE", "uk": "UA", "ru": "RU"}
 
 UI = {
     "en": {"privacy": "Privacy Policy", "terms": "Terms of Use", "updated": "Last updated", "tagline": "A calm logbook for your car: refuels, service plans and reminders.", "privacy_hint": "What Stint stores and where", "terms_hint": "Subscriptions, estimates and liability", "contact": "Contact"},
     "ru": {"privacy": "Политика конфиденциальности", "terms": "Условия использования", "updated": "Обновлено", "tagline": "Спокойный журнал машины: заправки, планы обслуживания и напоминания.", "privacy_hint": "Что Stint хранит и где", "terms_hint": "Подписки, расчёты и ответственность", "contact": "Связь"},
+    "de": {"privacy": "Datenschutzerklärung", "terms": "Nutzungsbedingungen", "updated": "Stand", "tagline": "Ein ruhiges Logbuch für dein Auto: Tanken, Wartungspläne und Erinnerungen.", "privacy_hint": "Was Stint speichert und wo", "terms_hint": "Abos, Berechnungen und Haftung", "contact": "Kontakt"},
     "uk": {"privacy": "Політика конфіденційності", "terms": "Умови використання", "updated": "Оновлено", "tagline": "Спокійний журнал авто: заправки, плани обслуговування й нагадування.", "privacy_hint": "Що Stint зберігає і де", "terms_hint": "Підписки, розрахунки та відповідальність", "contact": "Звʼязок"},
 }
 
 PRIVACY = {
+    "de": [
+        (None, "Stint erhebt keine personenbezogenen Daten. Es gibt kein Konto, keine Anmeldung, keine Analyse, keine Werbung und kein Tracking. Wir betreiben keine Server, die deine Daten empfangen."),
+        ("Was auf deinem Gerät bleibt", "Deine Autos, Tankvorgänge und anderen Einträge, Kilometerstände, Wartungspläne, Erinnerungen und Belegfotos werden im privaten Speicher der App auf deinem iPhone gespeichert. Sie sind gemäß deinen iCloud- oder Computer-Einstellungen in den Gerätebackups enthalten. Wir haben keinen Zugriff darauf."),
+        ("Kamera und Fotos", "Stint nutzt die Kamera oder die Fotoauswahl nur, wenn du ein Belegfoto hinzufügst. Über die Fotoauswahl erhält die App nur Zugriff auf die Fotos, die du auswählst. Fotos werden komprimiert und zusammen mit dem Eintrag auf deinem Gerät gespeichert."),
+        ("Mitteilungen", "Erinnerungen werden lokal auf deinem iPhone geplant. Es werden keine Push-Server verwendet."),
+        ("Widgets, Siri und Kurzbefehle", "Widgets lesen eine kurze Zusammenfassung, die die App in einen Container schreibt, den nur Stint und seine Widgets auf deinem Gerät teilen. Anfragen an Siri und Kurzbefehle verarbeitet Apple gemäß der Datenschutzrichtlinie von Apple; Stint erhält nur die Werte aus deiner Anfrage, etwa einen Betrag oder einen Kilometerstand."),
+        ("Käufe", "Abos werden von Apple abgewickelt. Wir erhalten keine Zahlungsdaten. Die App prüft den Abo-Status über StoreKit auf dem Gerät."),
+        ("Exporte", "CSV- und PDF-Dateien werden auf deinem Gerät erstellt und nur dorthin geteilt, wohin du sie selbst sendest."),
+        ("Daten löschen", "Einträge und Autos kannst du in der App löschen. Wenn du die App löschst, werden alle ihre Daten von deinem Gerät entfernt."),
+        ("Kinder", "Stint richtet sich nicht an Kinder unter 13 Jahren und erhebt wissentlich keine Informationen über sie."),
+        ("Änderungen", "Ändert sich diese Erklärung, aktualisieren wir diese Seite und das Datum oben."),
+    ],
     "en": [
         (None, "Stint does not collect personal data. There is no account, no sign-in, no analytics, no advertising and no tracking. We do not run servers that receive your data."),
         ("What stays on your device", "Your cars, refuels and other entries, odometer readings, service plans, reminders and receipt photos are stored in the app’s private storage on your iPhone. They are included in your device backups according to your iCloud or computer backup settings. We cannot access them."),
@@ -54,6 +67,15 @@ PRIVACY = {
 }
 
 TERMS = {
+    "de": [
+        (None, f"Mit der Nutzung von Stint stimmst du diesen Bedingungen und Apples <a href=\"{EULA}\">Endbenutzer-Lizenzvertrag für lizenzierte Apps</a> zu."),
+        ("Kostenlos und Premium", "Die kostenlose Version umfasst ein aktives Auto, bis zu drei Wartungspläne, den vollständigen Verlauf und den CSV-Export. Stint Premium hebt die Grenzen auf und ergänzt Berichte zu den Kosten pro Kilometer, den PDF-Verlauf und zusätzliche Widgets."),
+        ("Abos", "<ul><li>Stint Premium wird als automatisch verlängerbares Wochen-, Monats- und Jahresabo angeboten. Die Preise werden vor dem Kauf in der App angezeigt.</li><li>Das Jahresabo kann einen kostenlosen Testzeitraum enthalten. Ein ungenutzter Teil des Testzeitraums verfällt mit dem Kauf eines Abos.</li><li>Die Zahlung wird bei Bestätigung des Kaufs deinem Apple Account belastet.</li><li>Das Abo verlängert sich automatisch, wenn es nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums gekündigt wird. Die Verlängerung wird innerhalb von 24 Stunden vor Ende des Zeitraums berechnet.</li><li>Abos verwaltest und kündigst du unter Einstellungen → Apple Account → Abonnements. Erstattungen wickelt Apple ab.</li></ul>"),
+        ("Berechnungen, keine Beratung", "Verbrauch, Kosten pro Kilometer, Laufleistungsprognosen und Erinnerungen werden aus deinen Eingaben berechnet und können ungenau sein. Halte dich immer an den Wartungsplan des Herstellers und an gesetzliche Fristen wie Versicherung und Hauptuntersuchung. Wir haften nicht für versäumte Wartung, Bußgelder oder Schäden."),
+        ("Deine Daten", "Deine Daten werden auf deinem Gerät gespeichert. Für Backups bist du selbst verantwortlich."),
+        ("Die App", "Stint wird „wie besehen“ bereitgestellt. Wir können Funktionen ändern oder entfernen. Soweit gesetzlich zulässig, haften wir nicht für indirekte oder Folgeschäden aus der Nutzung der App."),
+        ("Änderungen", "Ändern sich diese Bedingungen, aktualisieren wir diese Seite und das Datum oben. Wenn du Stint weiter nutzt, akzeptierst du die aktualisierten Bedingungen."),
+    ],
     "en": [
         (None, f"By using Stint you agree to these Terms and to Apple’s <a href=\"{EULA}\">Licensed Application End User License Agreement</a>."),
         ("Free and Premium", "The free version includes one active car, up to three service plans, the full history and CSV export. Stint Premium removes the limits and adds cost-per-kilometre reports, the PDF history and additional widgets."),
