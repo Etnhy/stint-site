@@ -2,7 +2,7 @@ import html
 import os
 
 CONTACT = "appdev8661@gmail.com"
-UPDATED = {"en": "October 5, 2026", "ru": "5 октября 2026", "uk": "5 жовтня 2026", "de": "5. Oktober 2026"}
+UPDATED = {"en": "October 6, 2026", "ru": "6 октября 2026", "uk": "6 жовтня 2026", "de": "6. Oktober 2026"}
 EULA = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
 ROOT = os.path.dirname(os.path.abspath(__file__))
 LANGS = ["en", "de", "uk", "ru"]
@@ -24,7 +24,7 @@ PRIVACY = {
         ("Mitteilungen", "Erinnerungen werden lokal auf deinem iPhone geplant. Es werden keine Push-Server verwendet."),
         ("Widgets, Siri und Kurzbefehle", "Widgets lesen eine kurze Zusammenfassung, die die App in einen Container schreibt, den nur Stint und seine Widgets auf deinem Gerät teilen. Anfragen an Siri und Kurzbefehle verarbeitet Apple gemäß der Datenschutzrichtlinie von Apple; Stint erhält nur die Werte aus deiner Anfrage, etwa einen Betrag oder einen Kilometerstand."),
         ("Käufe", "Abos werden von Apple abgewickelt. Wir erhalten keine Zahlungsdaten. Die App prüft den Abo-Status über StoreKit auf dem Gerät."),
-        ("Exporte", "CSV- und PDF-Dateien werden auf deinem Gerät erstellt und nur dorthin geteilt, wohin du sie selbst sendest."),
+        ("Export und Import", "CSV- und PDF-Dateien werden auf deinem Gerät erstellt und nur dorthin geteilt, wohin du sie selbst sendest. Wenn du eine Datei importierst, liest Stint nur die Datei, die du auswählst, auf deinem Gerät, übernimmt die Einträge in dein Logbuch und speichert oder sendet die Datei selbst nicht."),
         ("Daten löschen", "Einträge und Autos kannst du in der App löschen. Wenn du die App löschst, werden alle ihre Daten von deinem Gerät entfernt; Daten in iCloud verschwinden, wenn du sie in der App oder in den iCloud-Speichereinstellungen löschst."),
         ("Kinder", "Stint richtet sich nicht an Kinder unter 13 Jahren und erhebt wissentlich keine Informationen über sie."),
         ("Änderungen", "Ändert sich diese Erklärung, aktualisieren wir diese Seite und das Datum oben."),
@@ -37,7 +37,7 @@ PRIVACY = {
         ("Notifications", "Reminders are scheduled locally on your iPhone. No push servers are involved."),
         ("Widgets, Siri and Shortcuts", "Widgets read a short summary that the app writes to a container shared only between Stint and its widgets on your device. Siri and Shortcuts requests are processed by Apple under Apple’s privacy policy; Stint receives only the values from your request, such as an amount or an odometer reading."),
         ("Purchases", "Subscriptions are processed by Apple. We do not receive your payment details. The app checks your subscription status through Apple’s StoreKit on the device."),
-        ("Exports", "CSV and PDF files are created on your device and are shared only where you choose to send them."),
+        ("Export and import", "CSV and PDF files are created on your device and are shared only where you choose to send them. When you import a file, Stint reads only the file you pick, on your device, adds its entries to your log and does not keep or send the file itself."),
         ("Deleting your data", "You can delete entries and cars in the app. Deleting the app removes all of its data from your device; data in iCloud is removed when you delete it in the app or in iCloud storage settings."),
         ("Children", "Stint is not directed at children under 13 and does not knowingly collect any information from them."),
         ("Changes", "If this policy changes, we will update this page and the date above."),
@@ -50,7 +50,7 @@ PRIVACY = {
         ("Уведомления", "Напоминания планируются локально на iPhone. Push-серверы не используются."),
         ("Виджеты, Siri и Быстрые команды", "Виджеты читают короткую сводку, которую приложение записывает в контейнер, общий только для Stint и его виджетов на вашем устройстве. Запросы Siri и Быстрых команд обрабатывает Apple по своей политике конфиденциальности; Stint получает только значения из запроса — например, сумму или пробег."),
         ("Покупки", "Подписки обрабатывает Apple. Мы не получаем ваши платёжные данные. Приложение проверяет статус подписки через StoreKit на устройстве."),
-        ("Экспорт", "Файлы CSV и PDF создаются на устройстве и отправляются только туда, куда вы их отправите сами."),
+        ("Экспорт и импорт", "Файлы CSV и PDF создаются на устройстве и отправляются только туда, куда вы их отправите сами. При импорте Stint читает на устройстве только выбранный вами файл, добавляет записи в журнал и не сохраняет и не отправляет сам файл."),
         ("Удаление данных", "Записи и машины можно удалить в приложении. Удаление приложения стирает все его данные с устройства; данные в iCloud удаляются, когда вы удаляете их в приложении или в настройках хранилища iCloud."),
         ("Дети", "Stint не предназначен для детей младше 13 лет и сознательно не собирает о них никакой информации."),
         ("Изменения", "Если политика изменится, мы обновим эту страницу и дату выше."),
@@ -63,7 +63,7 @@ PRIVACY = {
         ("Сповіщення", "Нагадування плануються локально на iPhone. Push-сервери не використовуються."),
         ("Віджети, Siri та Швидкі команди", "Віджети читають коротке зведення, яке застосунок записує в контейнер, спільний лише для Stint і його віджетів на вашому пристрої. Запити Siri та Швидких команд обробляє Apple згідно зі своєю політикою конфіденційності; Stint отримує лише значення із запиту — наприклад, суму чи пробіг."),
         ("Покупки", "Підписки обробляє Apple. Ми не отримуємо ваших платіжних даних. Застосунок перевіряє статус підписки через StoreKit на пристрої."),
-        ("Експорт", "Файли CSV і PDF створюються на пристрої та надсилаються лише туди, куди ви їх надішлете самі."),
+        ("Експорт та імпорт", "Файли CSV і PDF створюються на пристрої та надсилаються лише туди, куди ви їх надішлете самі. Під час імпорту Stint читає на пристрої лише обраний вами файл, додає записи до журналу й не зберігає та не надсилає сам файл."),
         ("Видалення даних", "Записи й авто можна видалити в застосунку. Видалення застосунку стирає всі його дані з пристрою; дані в iCloud видаляються, коли ви видаляєте їх у застосунку або в налаштуваннях сховища iCloud."),
         ("Діти", "Stint не призначений для дітей до 13 років і свідомо не збирає про них жодної інформації."),
         ("Зміни", "Якщо політика зміниться, ми оновимо цю сторінку й дату вище."),
@@ -73,37 +73,37 @@ PRIVACY = {
 TERMS = {
     "de": [
         (None, f"Mit der Nutzung von Stint stimmst du diesen Bedingungen und Apples <a href=\"{EULA}\">Endbenutzer-Lizenzvertrag für lizenzierte Apps</a> zu."),
-        ("Kostenlos und Premium", "Die kostenlose Version umfasst ein aktives Auto, bis zu drei Wartungspläne, den vollständigen Verlauf und den CSV-Export. Stint Premium hebt die Grenzen auf und ergänzt Berichte zu den Kosten pro Kilometer, den PDF-Verlauf und zusätzliche Widgets."),
+        ("Kostenlos und Premium", "Die kostenlose Version umfasst ein aktives Auto, bis zu drei Wartungspläne, den vollständigen Verlauf sowie CSV-Import und -Export. Stint Premium hebt die Grenzen auf und ergänzt Berichte zu den Kosten pro Kilometer, den PDF-Verlauf und zusätzliche Widgets."),
         ("Abos", "<ul><li>Stint Premium wird als automatisch verlängerbares Wochen-, Monats- und Jahresabo angeboten. Die Preise werden vor dem Kauf in der App angezeigt.</li><li>Das Jahresabo kann einen kostenlosen Testzeitraum enthalten. Ein ungenutzter Teil des Testzeitraums verfällt mit dem Kauf eines Abos.</li><li>Die Zahlung wird bei Bestätigung des Kaufs deinem Apple Account belastet.</li><li>Das Abo verlängert sich automatisch, wenn es nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums gekündigt wird. Die Verlängerung wird innerhalb von 24 Stunden vor Ende des Zeitraums berechnet.</li><li>Abos verwaltest und kündigst du unter Einstellungen → Apple Account → Abonnements. Erstattungen wickelt Apple ab.</li></ul>"),
         ("Berechnungen, keine Beratung", "Verbrauch, Kosten pro Kilometer, Laufleistungsprognosen und Erinnerungen werden aus deinen Eingaben berechnet und können ungenau sein. Halte dich immer an den Wartungsplan des Herstellers und an gesetzliche Fristen wie Versicherung und Hauptuntersuchung. Wir haften nicht für versäumte Wartung, Bußgelder oder Schäden."),
-        ("Deine Daten", "Deine Daten werden auf deinem Gerät gespeichert. Für Backups bist du selbst verantwortlich."),
+        ("Deine Daten", "Deine Daten werden auf deinem Gerät gespeichert. Für Backups bist du selbst verantwortlich: Mit dem CSV-Export sicherst du dein Logbuch, mit dem Import holst du es zurück."),
         ("Die App", "Stint wird „wie besehen“ bereitgestellt. Wir können Funktionen ändern oder entfernen. Soweit gesetzlich zulässig, haften wir nicht für indirekte oder Folgeschäden aus der Nutzung der App."),
         ("Änderungen", "Ändern sich diese Bedingungen, aktualisieren wir diese Seite und das Datum oben. Wenn du Stint weiter nutzt, akzeptierst du die aktualisierten Bedingungen."),
     ],
     "en": [
         (None, f"By using Stint you agree to these Terms and to Apple’s <a href=\"{EULA}\">Licensed Application End User License Agreement</a>."),
-        ("Free and Premium", "The free version includes one active car, up to three service plans, the full history and CSV export. Stint Premium removes the limits and adds cost-per-kilometre reports, the PDF history and additional widgets."),
+        ("Free and Premium", "The free version includes one active car, up to three service plans, the full history, and CSV import and export. Stint Premium removes the limits and adds cost-per-kilometre reports, the PDF history and additional widgets."),
         ("Subscriptions", "<ul><li>Stint Premium is offered as weekly, monthly and yearly auto-renewable subscriptions. Prices are shown in the app before purchase.</li><li>The yearly plan may include a free trial. Any unused part of a trial is forfeited when you buy a subscription.</li><li>Payment is charged to your Apple Account at confirmation of purchase.</li><li>A subscription renews automatically unless it is turned off at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours before the end of the period.</li><li>You can manage or cancel subscriptions in Settings → Apple Account → Subscriptions. Refunds are handled by Apple.</li></ul>"),
         ("Estimates, not advice", "Fuel economy, cost per kilometre, mileage forecasts and reminders are calculated from the data you enter and may be inaccurate. Always follow your vehicle manufacturer’s maintenance schedule and legal deadlines such as insurance and inspection. We are not responsible for missed maintenance, fines or damage."),
-        ("Your data", "Your data is stored on your device. You are responsible for keeping backups."),
+        ("Your data", "Your data is stored on your device. You are responsible for keeping backups: CSV export saves your log, and import brings it back."),
         ("The app", "Stint is provided “as is”. We may change or remove features. To the maximum extent permitted by law, we are not liable for indirect or consequential damages arising from the use of the app."),
         ("Changes", "If these Terms change, we will update this page and the date above. Continuing to use Stint means you accept the updated Terms."),
     ],
     "ru": [
         (None, f"Пользуясь Stint, вы соглашаетесь с этими условиями и со <a href=\"{EULA}\">стандартным лицензионным соглашением Apple</a> (Licensed Application EULA)."),
-        ("Бесплатно и Premium", "Бесплатная версия включает одну активную машину, до трёх планов обслуживания, полную историю и экспорт CSV. Stint Premium снимает ограничения и добавляет отчёты о стоимости километра, PDF-историю и дополнительные виджеты."),
+        ("Бесплатно и Premium", "Бесплатная версия включает одну активную машину, до трёх планов обслуживания, полную историю, импорт и экспорт CSV. Stint Premium снимает ограничения и добавляет отчёты о стоимости километра, PDF-историю и дополнительные виджеты."),
         ("Подписки", "<ul><li>Stint Premium доступен как автопродлеваемая подписка на неделю, месяц и год. Цены показываются в приложении до покупки.</li><li>Годовой план может включать бесплатный пробный период. Неиспользованная часть пробного периода сгорает при покупке подписки.</li><li>Оплата списывается с вашего Apple Account при подтверждении покупки.</li><li>Подписка продлевается автоматически, если не отключить её не позднее чем за 24 часа до конца текущего периода. Плата за продление списывается в течение 24 часов до конца периода.</li><li>Управлять подпиской и отменить её можно в Настройках → Apple Account → Подписки. Возвраты обрабатывает Apple.</li></ul>"),
         ("Расчёты, а не рекомендации", "Расход, стоимость километра, прогноз пробега и напоминания считаются по данным, которые вы вводите, и могут быть неточными. Всегда следуйте регламенту производителя машины и юридическим срокам — страховки, техосмотра. Мы не отвечаем за пропущенное обслуживание, штрафы или ущерб."),
-        ("Ваши данные", "Данные хранятся на вашем устройстве. За резервные копии отвечаете вы."),
+        ("Ваши данные", "Данные хранятся на вашем устройстве. За резервные копии отвечаете вы: экспорт CSV сохраняет журнал, а импорт возвращает его обратно."),
         ("Приложение", "Stint предоставляется «как есть». Мы можем менять или убирать функции. В максимальной степени, допустимой законом, мы не несём ответственности за косвенный ущерб от использования приложения."),
         ("Изменения", "Если условия изменятся, мы обновим эту страницу и дату выше. Продолжая пользоваться Stint, вы принимаете обновлённые условия."),
     ],
     "uk": [
         (None, f"Користуючись Stint, ви погоджуєтеся з цими умовами та зі <a href=\"{EULA}\">стандартною ліцензійною угодою Apple</a> (Licensed Application EULA)."),
-        ("Безкоштовно і Premium", "Безкоштовна версія включає одне активне авто, до трьох планів обслуговування, повну історію та експорт CSV. Stint Premium знімає обмеження й додає звіти про вартість кілометра, PDF-історію та додаткові віджети."),
+        ("Безкоштовно і Premium", "Безкоштовна версія включає одне активне авто, до трьох планів обслуговування, повну історію, імпорт та експорт CSV. Stint Premium знімає обмеження й додає звіти про вартість кілометра, PDF-історію та додаткові віджети."),
         ("Підписки", "<ul><li>Stint Premium доступний як автоподовжувана підписка на тиждень, місяць і рік. Ціни показуються в застосунку до покупки.</li><li>Річний план може містити безкоштовний пробний період. Невикористана частина пробного періоду згорає під час покупки підписки.</li><li>Оплата списується з вашого Apple Account під час підтвердження покупки.</li><li>Підписка подовжується автоматично, якщо не вимкнути її щонайменше за 24 години до кінця поточного періоду. Плата за подовження списується протягом 24 годин до кінця періоду.</li><li>Керувати підпискою та скасувати її можна в Параметрах → Apple Account → Підписки. Повернення коштів обробляє Apple.</li></ul>"),
         ("Розрахунки, а не поради", "Витрата пального, вартість кілометра, прогноз пробігу й нагадування розраховуються за даними, які ви вводите, і можуть бути неточними. Завжди дотримуйтеся регламенту виробника авто та юридичних строків — страховки, техогляду. Ми не відповідаємо за пропущене обслуговування, штрафи чи шкоду."),
-        ("Ваші дані", "Дані зберігаються на вашому пристрої. За резервні копії відповідаєте ви."),
+        ("Ваші дані", "Дані зберігаються на вашому пристрої. За резервні копії відповідаєте ви: експорт CSV зберігає журнал, а імпорт повертає його назад."),
         ("Застосунок", "Stint надається «як є». Ми можемо змінювати або прибирати функції. У максимальному обсязі, дозволеному законом, ми не несемо відповідальності за непрямі збитки від використання застосунку."),
         ("Зміни", "Якщо умови зміняться, ми оновимо цю сторінку й дату вище. Продовжуючи користуватися Stint, ви приймаєте оновлені умови."),
     ],
